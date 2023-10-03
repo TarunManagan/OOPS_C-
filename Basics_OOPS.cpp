@@ -1,22 +1,24 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-class Student {
-    int PRN,year;
+class Student{
+    int rollno;
+    int year;
     string name;
 public:
-    Student();
-    void display() {
-        cout << "\nName: " << name<< "\nPRN " << PRN << "\nYear: " << year << endl;
+    Student(){
+        cout<<"Enter your name: ";
+        cin>>name;
+        cout<<"Enter your roll no.: ";
+        cin>>rollno;
+        cout<<"Enter your year: ";
+        cin>>year;
+    }
+    void display(){
+        cout<<"Name: "<<name<<endl<<"Roll_No: "<<rollno<<endl<<"Year: "<<year;
     }
 };
-Student::Student() {
-    cout << "\nEnter your name: ";
-    cin >> name;
-    cout << "Enter your PRN and year: ";
-    cin >> PRN>>year;
-}
-int main() {
+int main(){
     Student s1;
     s1.display();
     return 0;
@@ -24,8 +26,9 @@ int main() {
 
 /*OUPUT
 Enter your name: Tarun
-Enter your PRN and year: 118 2
+Enter your roll no.: 118
+Enter your year: 2022-26
 Name: Tarun
-PRN 118
-Year: 2
+Roll_No: 118
+Year: 2022
 */
