@@ -27,7 +27,7 @@ int main(){
 /*OUPUT
 Enter your name: Tarun
 Enter your roll no.: 118
-Enter your year: 2022-26
+Enter your year: 2022
 Name: Tarun
 Roll_No: 118
 Year: 2022
