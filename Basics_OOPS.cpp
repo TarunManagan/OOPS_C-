@@ -5,7 +5,7 @@ class Student{
     int rollno;
     int year;
     string name;
-public:
+public: //PUBLIC allows to access the elements of class even outside the class
     Student(){
         cout<<"Enter your name: ";
         cin>>name;
