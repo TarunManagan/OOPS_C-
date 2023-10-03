@@ -1,27 +1,29 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-
-class construct{
+int count =0;
+class destruct{
     public:
-    int sum;
-    construct(int m, int n){ //Deconstructor
-        sum = m+n;
+    destruct(){ //Deconstructor
+        count++;
+        cout<<"No. of objects created: "<<count<<endl;
     }
-    void display(){
-        cout<<"Sum is: "<<sum;
+    ~destruct(){ //Deconstructor
+        count--;
+        cout<<"No. of objects created: "<<count<<endl;
     }
-};
-
+    };
+    
 int main(){
-    int a,b;
-    cout<<"Enter two numbers: ";
-    cin>>a>>b;
-    construct c(a,b); //Instantiation
-    c.display();
+    destruct aa,bb,cc; //Instantiation
+    
     return 0;
 }
 
 /*OUTPUT
-Enter two numbers: 2 4
-Sum is: 6
+No. of objects created: 1
+No. of objects created: 2
+No. of objects created: 3
+No. of objects created: 2
+No. of objects created: 1
+No. of objects created: 0
 */
