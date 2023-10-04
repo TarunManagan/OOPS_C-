@@ -2,9 +2,9 @@
 using namespace std;
 class cube{
         public: //Allows the access of the elements even outside the class
-        double ht,breadth,len;
+        double ht, breadth,len;
         double vol_cube(){
-            cout<<"Enter the height, breadth and lenght of the cube: ";
+            cout<<"Enter the height, breadth, and length of the cube: ";
             cin>>ht>>breadth>>len;
             double volume1 = ht*breadth*len;
             return volume1;
@@ -22,6 +22,6 @@ int main(){
 }
 
 /*OUTPUT
-Enter the height, breadth and lenght of the cube: 4 5 6
+Enter the height, breadth, and length of the cube: 4 5 6
 The volume of the cube is: 120
 */
