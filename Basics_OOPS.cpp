@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class Student{
+class Student{ //Creation of class
     int rollno;
     int year;
     string name;
@@ -19,7 +19,7 @@ public: //PUBLIC allows to access the elements of class even outside the class
     }
 };
 int main(){
-    Student s1;
+    Student s1; //Instantiation of object s1
     s1.display();
     return 0;
 }
