@@ -3,11 +3,11 @@ using namespace std;
 int count =0;
 class destruct{
     public:
-    destruct(){ //Deconstructor
+    destruct(){ //Destructor
         count++;
         cout<<"No. of objects created: "<<count<<endl;
     }
-    ~destruct(){ //Deconstructor
+    ~destruct(){ //Destructor
         count--;
         cout<<"No. of objects created: "<<count<<endl;
     }
