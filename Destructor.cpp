@@ -15,7 +15,6 @@ class destruct{
     
 int main(){
     destruct aa,bb,cc; //Instantiation
-    
     return 0;
 }
 
